@@ -1,0 +1,283 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #eeeeea;
+    background-color: #20231f;
+}
+
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #eeeeea;
+    background-color: #34392f;
+    border-bottom: 4px solid #a94336;
+}
+
+header h1 {
+    margin: 0;
+    color: #f2f0e8;
+    font-size: 2.2rem;
+    animation: aparecer 0.7s ease-out;
+}
+
+
+header h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 0.7rem auto 0;
+    background-color: #a94336;
+}
+
+header p {
+    max-width: 850px;
+    margin: 1rem auto 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #2b2f29;
+    border: 1px solid #41463b;
+    border-radius: 8px;
+}
+
+
+body > h2,
+body > form {
+    width: 90%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body > form {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #2b2f29;
+    border: 1px solid #41463b;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 1.8rem;
+    padding-left: 0.7rem;
+    color: #e4c9a5;
+    border-left: 4px solid #a94336;
+}
+
+p {
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    margin: 1.8rem 0;
+    border: 0;
+    border-top: 1px solid #555b4d;
+}
+
+
+main img,
+main iframe {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-radius: 6px;
+}
+
+main img {
+    width: auto;
+    height: auto;
+    max-height: 320px;
+}
+
+main iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.65rem 1rem;
+    color: #f4eee5;
+    text-decoration: none;
+    background-color: #454b3e;
+    border: 1px solid #626953;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+nav a:hover {
+    background-color: #a94336;
+    transform: translateY(-2px);
+}
+
+a:focus {
+    outline: 2px solid #e4c9a5;
+    outline-offset: 3px;
+}
+ol {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem 1.5rem;
+    padding-left: 2rem;
+}
+
+ol li {
+    padding: 0.35rem 0.2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #555b4d;
+}
+
+th {
+    color: #ffffff;
+    background-color: #454b3e;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #353a31;
+}
+
+tbody tr:hover {
+    background-color: #40463a;
+}
+
+fieldset {
+    padding: 1.2rem;
+    border: 1px solid #626953;
+    border-radius: 6px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    color: #e4c9a5;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+    padding: 0.65rem;
+    color: #eeeeea;
+    font: inherit;
+    background-color: #20231f;
+    border: 1px solid #626953;
+    border-radius: 4px;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #a94336;
+    outline-offset: 1px;
+}
+
+button {
+    margin-top: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    color: #ffffff;
+    font: inherit;
+    background-color: #a94336;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #82352c;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    main iframe {
+        height: 220px;
+    }
+
+    ol {
+        grid-template-columns: 1fr;
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    fieldset {
+        padding: 0.8rem;
+    }
+}

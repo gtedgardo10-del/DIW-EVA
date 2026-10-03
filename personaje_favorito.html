@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>¿Cual es tu personaje favorito de TWD?</h1>
+        <p>En esta página somos una comunidad y quisieramos saber mas sobre tus gustos en este gran mundo!!</p>
+        <hr>
+    </header>
+
+    <h2>¡Elige a tu personaje favorito!</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <label for="apodo">Apodo: </label>
+                <input type="text" id="apodo" name="apodo" maxlength="15">
+                <br>
+                <br>
+
+                <label for="personaje">Personaje favorito:</label><br>
+                <select id="personaje" name="personaje_favorito" required>
+                    <option value="" disabled selected>-- Selecciona un personaje --</option>
+                    <option value="rick">Rick Grimes</option>
+                    <option value="daryl">Daryl Dixon</option>
+                    <option value="michonne">Michonne</option>
+                    <option value="maggie">Maggie Rhee</option>
+                    <option value="glenn">Glenn Rhee</option>
+                    <option value="carl">Carl Grimes</option>
+                    <option value="judith">Judith Grimes</option>
+                    <option value="carol">Carol Peletier</option>
+                    <option value="negan">Negan</option>
+                    <option value="jesus">Paul "Jesús" Rovia</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="comentario">¿Porque es tu favorito?</label><br>
+                <textarea name="comentario" id="comentario"></textarea>
+                <br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+</body>
+</html>
