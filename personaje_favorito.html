@@ -13,8 +13,10 @@
         <hr>
     </header>
 
+<h3 id="tituloCategoria"></h3>
+<ul id="listaDatos"></ul>
     <h2>¡Elige a tu personaje favorito!</h2>
-        <form action="#" method="post">
+        <form id="formulario" action="#" method="post">
             <fieldset>
                 <label for="apodo">Apodo: </label>
                 <input type="text" id="apodo" name="apodo" maxlength="15">
@@ -35,6 +37,9 @@
                     <option value="negan">Negan</option>
                     <option value="jesus">Paul "Jesús" Rovia</option>
                 </select>
+
+                <p id="fichaPersonaje"></p>
+
                 <br>
                 <br>
 
@@ -43,7 +48,28 @@
                 <br>
 
                 <button type="submit">Enviar</button>
+
+                <p id="avisoForm"></p>
+
             </fieldset>
         </form>
+
+<main>
+        <h2>Opiniones de la comunidad</h2>
+        <ul>
+            <li>DarylFan99 (Fan de Daryl Dixon): "El mejor personaje desde la primera temporada."</li>
+        </ul>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver a la página principal</a></li>
+                <li><a href="inicio.html">Introducción al mundo</a></li>
+            </ul>
+        </nav>
+</main>
+
+<script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
