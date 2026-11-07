@@ -1,3 +1,11 @@
+// index
+const formulario = document.getElementById("miFormulario");
+const inputNombre = document.getElementById("nombre");
+
+if (inputNombre) {
+  inputNombre.addEventListener("focus", function() {
+    inputNombre.style.backgroundColor = "#e0f7fa";
+  });
 
   inputNombre.addEventListener("blur", function() {
     inputNombre.style.backgroundColor = "";
